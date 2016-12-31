@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <title>Made It! A Reddit Clone</title>
-    <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
+  <meta charset="UTF-8">
+  <title>MadeIt</title>
+  <link href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
 
-    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.7/angular.min.js"></script>
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.3.2/angular-ui-router.js"></script>
-    <script src="app.js"></script>
-    <style> .glyphicon-thumps-up { cursor:pointer } </style>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.3.10/angular.min.js"></script>
+  <script src="http://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.js"></script>
+  <script src="app.js"></script>
+  <style> .glyphicon-thumbs-up { cursor:pointer } </style>
 </head>
-<body ng-app="MadeIt">
+<body ng-app="madeIt">
   <div class="row">
-  	<div class = "col-md-6 col-md-offset-3">
-  		<ui-view></ui-view>
-  	</div>
+    <div class="col-md-6 col-md-offset-3">
+      <ui-view></ui-view>
+    </div>
   </div>
-   <script type="text/ng-template" id="/home.html">
+  <script type="text/ng-template" id="/home.html">
     <div class="page-header">
       <h1>MadeIt</h1>
     </div>
-  	<div class="row">
+
+    <div class="row">
       <div class="col-md-6 col-md-offset-3">
 
         <div class="page-header">
-          <h1>Flapper News</h1>
+          <h1>MadeIt</h1>
         </div>
 
         <div ng-repeat="post in posts | orderBy:'-upvotes'">
