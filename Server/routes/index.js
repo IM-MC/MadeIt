@@ -34,7 +34,7 @@ router.param('post', function(req,res,next,id){
 
 	query.exec(function(err,post){
 		if (err){return next(err);}
-		if(!post){return next(new Error('can\'t find post')); }
+		if(!post){return next(new Error("Can't find post")); }
 
 		req.post = post;
 		return next();
